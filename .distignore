@@ -20,4 +20,3 @@ composer.lock
 docker-compose.yml
 GPG_KEY
 phpunit.xml.dist
-.git

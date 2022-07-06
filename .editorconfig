@@ -4,16 +4,10 @@ root = true
 charset = utf-8
 tab_width = 4
 trim_trailing_whitespace = true
-indent_size = tab
-indent_style = tab
+indent_size = 4
+indent_style = space
 insert_final_newline = true
 end_of_line = lf
 
 [*.yml]
-tab_width = 2
-
-[*.xml]
-tab_width = 2
-
-[*.json]
-tab_width = 2
+indent_size = 2
