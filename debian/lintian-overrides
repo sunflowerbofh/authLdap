@@ -1,0 +1,3 @@
+wordpress-plugin-authldap: extra-license-file [usr/share/doc/wordpress-plugin-authldap/LICENSE.md]
+wordpress-plugin-authldap: extra-license-file [usr/share/wordpress/wp-content/plugins/authldap/LICENSE.md]
+wordpress-plugin-authldap: package-contains-documentation-outside-usr-share-doc [usr/share/wordpress/*

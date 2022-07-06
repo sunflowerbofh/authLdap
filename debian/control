@@ -1,0 +1,50 @@
+Source: authldap
+Section: web
+Priority: optional
+Maintainer: Katharina Drexel <katharina.drexel@bfh.ch>
+Build-Depends:
+ debhelper-compat (= 13),
+ phpab,
+ pkg-php-tools,
+Rules-Requires-Root: no
+Standards-Version: 4.6.1
+Homepage: https://wordpress.org/plugins/authldap
+Vcs-Browser: https://github.com/sunflowerbofh/authLdap
+Vcs-Git: https://github.com/sunflowerbofh/authLdap
+
+Package: wordpress-plugin-authldap
+Architecture: all
+Depends:
+ wordpress,
+ ${misc:Depends},
+ ${phpcomposer:Debian-require},
+Recommends:
+ php-ldap,
+Suggests:
+ ${phpcomposer:Debian-suggest},
+Replaces:
+ ${phpcomposer:Debian-replace},
+Breaks:
+ ${phpcomposer:Debian-conflict},
+ ${phpcomposer:Debian-replace},
+Provides:
+ ${phpcomposer:Debian-provide},
+Description: Uses existing LDAP as authentication-backend for wordpress
+ WordPress is a full featured web blogging tool:
+    * Instant publishing (no rebuilding)
+    * Comment pingback support with spam protection
+    * Non-crufty URLs
+    * Themable
+    * Plugin support
+ .
+ So what are the differences to other Wordpress-LDAP-Authentication-Plugins?
+  * Flexible: You are totaly free in which LDAP-backend to use. Due to the
+    extensive configuration you can freely decide how to do the authentication
+    of your users. It simply depends on your filters.
+  * Independent: As soon as a user logs in, it is added/updated to the
+    Wordpress' user-database to allow wordpress to always use the correct data.
+    You only have to administer your users once.
+  * Failsafe: Due to the users being created in Wordpress' User-database they
+    can also log in when the LDAP-backend currently is gone.
+  * Role-Aware: You can map Wordpress' roles to values of an existing
+    LDAP-attribute.

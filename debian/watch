@@ -1,0 +1,5 @@
+version=4
+options=uversionmangle=s/-?([^\d.]+)/~$1/;tr/A-Z/a-z/,\
+mode=git,gitmode=full,gitexport=all,pgpmode=gittag \
+https://github.com/heiglandreas/authLdap \
+refs/tags/v?(\d.+)
