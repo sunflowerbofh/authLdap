@@ -37,14 +37,16 @@ Description: Uses existing LDAP as authentication-backend for wordpress
     * Themable
     * Plugin support
  .
- So what are the differences to other Wordpress-LDAP-Authentication-Plugins?
-  * Flexible: You are totaly free in which LDAP-backend to use. Due to the
-    extensive configuration you can freely decide how to do the authentication
-    of your users. It simply depends on your filters.
+ AuthLDAP allows WordPress admins to use an existing LDAP as authentication
+ base for WordPress.
+ Characteristics of the plugin:
+  * Flexible: Users are totaly free in which LDAP-backend to use. Due to the
+    extensive configuration people can freely decide how to do the
+    authentication of your users. It simply depends on your filters.
   * Independent: As soon as a user logs in, it is added/updated to the
     Wordpress' user-database to allow wordpress to always use the correct data.
-    You only have to administer your users once.
+    Wordpress admins only have to administer your users once.
   * Failsafe: Due to the users being created in Wordpress' User-database they
     can also log in when the LDAP-backend currently is gone.
-  * Role-Aware: You can map Wordpress' roles to values of an existing
+  * Role-Aware: Wordpress' roles can be mapped to values of an existing
     LDAP-attribute.
