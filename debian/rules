@@ -8,4 +8,4 @@ override_dh_auto_build:
 
 execute_after_dh_installchangelogs:
 	cp README.md debian/wordpress-plugin-authldap/usr/share/doc/wordpress-plugin-authldap/README
-	sed -n '/==[[:space:]]*Changelog/,$$p' readme.txt > debian/wordpress-plugin-authldap/usr/share/doc/wordpress-plugin-authldap/CHANGELOG
+	sed -n '/==[[:space:]]*Changelog/,$$p' readme.txt > debian/wordpress-plugin-authldap/usr/share/doc/wordpress-plugin-authldap/changelog
