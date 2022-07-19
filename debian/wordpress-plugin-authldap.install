@@ -1,6 +1,5 @@
 *.css /usr/share/wordpress/wp-content/plugins/authldap
-*.md /usr/share/wordpress/wp-content/plugins/authldap
 *.php /usr/share/wordpress/wp-content/plugins/authldap
-*.txt /usr/share/wordpress/wp-content/plugins/authldap
+readme.txt /usr/share/wordpress/wp-content/plugins/authldap
 src /usr/share/wordpress/wp-content/plugins/authldap
 view /usr/share/wordpress/wp-content/plugins/authldap
