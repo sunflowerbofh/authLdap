@@ -1,12 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh ${@} --with phpcomposer
+	dh ${@} --buildsystem=phppear --with phpcomposer
 
 override_dh_auto_build:
 	phpab --output src/autoload.php src
-
-execute_before_dh_auto_clean:
-	if [ -e build.xml ]; then \
-		rm build.xml; \
-	fi
